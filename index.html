@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home | John Roy Geralde</title>
+
+  <!-- ✅ Favicon -->
+  <link rel="icon" type="image/x-icon" href="portfolio.png">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+
+  <style>
+    html, body {
+      font-family: "Roboto", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+      overflow-x: hidden;
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ✅ Dark blue theme overrides */
+    .w3-dark-blue, .w3-teal {
+      background-color: #003366 !important;
+      color: #fff !important;
+    }
+    .w3-text-dark-blue, .w3-text-teal {
+      color: #003366 !important;
+    }
+
+    .w3-card:hover {
+      transform: scale(1.02);
+    }
+    /* ✅ Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: #003366 !important;
+      color: white;
+    }
+
+    .navbar a:hover {
+      background-color: white !important;
+      color: #003366 !important;
+    }
+
+    /* ✅ Main layout */
+    .main-container {
+      flex: 1;
+      width: 100%;
+      margin-top: 60px;
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;
+      min-height: 100vh;
+    }
+
+    /* ✅ Left column (Profile section) */
+    .left-column {
+      width: 30%;
+      background-color: #e8eef8;
+      padding: 30px;
+      box-sizing: border-box;
+      border-right: 1px solid #ccc;
+      text-align: center;
+    }
+
+    .left-column h1 {
+      white-space: nowrap;
+      margin: 10px 0 0 0;
+      font-size: 1.8em;
+      color: black;
+      font-weight: normal;
+    }
+
+    /* ✅ Right column (About section) */
+    .right-column {
+      width: 70%;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+
+    .about-heading {
+      color: black;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 2em;
+      margin-top: 0;
+    }
+
+    .about-heading i {
+      color: #003366;
+    }
+
+    .w3-light-grey {
+      background-color: #dfe6ef !important;
+    }
+
+    .w3-circle {
+      border: 3px solid #003366;
+    }
+
+    /* ✅ Image Hover Effects */
+    img {
+      transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      filter: brightness(1.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    /* ✅ Footer */
+    footer {
+      width: 100%;
+      padding: 20px 0;
+      background-color: #003366;
+      color: white;
+      text-align: center;
+    }
+
+    footer a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ✅ Responsive Design */
+    @media screen and (max-width: 900px) {
+      .main-container {
+        flex-direction: column;
+      }
+      .left-column, .right-column {
+        width: 100%;
+        border: none;
+      }
+      .left-column {
+        border-bottom: 1px solid #ccc;
+      }
+      .right-column {
+        text-align: center;
+        padding-top: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ✅ Navbar -->
+  <div class="w3-bar navbar">
+    <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Home</a>
+    <a href="portfolio.html" class="w3-bar-item w3-button"><i class="fa fa-briefcase"></i> My Job Portfolio</a>
+    <a href="certificates.html" class="w3-bar-item w3-button"><i class="fa fa-certificate"></i> My Certificates</a>
+  </div>
+
+  <!-- ✅ Main Content -->
+  <div class="main-container w3-animate-opacity">
+
+    <!-- ✅ Left Column -->
+    <div class="left-column">
+      <div class="w3-display-container w3-center">
+        <img src="IDPIC.jpg" class="w3-circle" style="width:70%; height:70%" alt="Avatar">
+        <div class="w3-display-bottom w3-container w3-text-black">
+          <h1>John Roy Geralde</h1>
+        </div>
+      </div>
+
+      <div class="w3-container" style="text-align:left; margin-top:10px;">
+        <div class="w3-container w3-card w3-white" style="border-radius:10px !important;">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right"></i>Software Engineer/Computer Science Instructor</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right"></i>Davao City, Philippines</p>
+        </div>    
+        <br>
+        <div class="w3-container w3-card w3-white" style="border-radius:10px !important;">
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right"></i>Skills</b></p>
+
+          <p>NodeJS,NextJs, React</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-dark-blue" style="width:70%">70%</div>
+          </div>
+
+          <p>GraphQL</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-dark-blue" style="width:70%">70%</div>
+          </div>
+
+          <p>Python Fullstack Web Development Using Odoo 18/19</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-dark-blue" style="width:90%">90%</div>
+          </div>
+
+          <p>Delphi Desktop and Fullstack Web Development using UNIGUI</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-dark-blue" style="width:90%">90%</div>
+          </div>
+
+          <p>HTML, Javascript, CSS</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-dark-blue" style="width:90%">90%</div>
+          </div>
+
+          <p>Database Management using PostgreSQL, MySQL, MS SQL</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-dark-blue" style="width:95%; margin-bottom:20px !important;">95%</div>
+          </div>
+        </div>  
+        <br>
+        <div class="w3-container w3-card w3-white" style="border-radius:10px !important;">
+          <p class="w3-large"><b><i class="fa fa-globe fa-fw w3-margin-right"></i>Languages Spoken</b></p>
+          <p>English (EF Set Certified as C1, Advanced)</p>
+          <div class="w3-light-grey w3-round-xlarge">         
+            <div class="w3-container w3-center w3-round-xlarge w3-dark-blue" style="width:90%">90%</div>
+          </div>
+          <p>Visayan</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-container w3-center w3-round-xlarge w3-dark-blue" style="width:95%">95%</div>
+          </div>
+          <p>Filipino</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-container w3-center w3-round-xlarge w3-dark-blue" style="width:90%; margin-bottom:20px !important;">90%</div>
+          </div>
+        </div>  
+      </div>
+    </div>
+
+    <!-- ✅ Right Column -->
+    <div class="right-column" style="padding-top:15px !important; padding-left:15px !important; padding-right:15px !important;">
+      <div class="w3-container">
+        <h2 class="w3-text-black about-heading" style="height:12px !important;"><i class="fa fa-user"></i> About Me</h2>
+      </div>
+      <hr>
+      <div class="w3-container w3-card" style="border-radius:10px !important;">
+        <h5 class="w3-opacity"><b>Software Engineer / Web Developer</b></h5>
+        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>1996 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
+        <p>Highly skilled software development professional bringing talents for software design, development and integration. Offering advanced knowledge of in-demand programming languages. Gained extensive background in writing code and developing software solutions to various local industry clients.</p>
+        <p>An experienced Database Administrator with actual experience in Windows Server Failover Clustering and Replication.</p>
+        <p>An avid user of Linux and Ubuntu.</p>
+
+      </div>
+      <br>  
+
+      <div class="w3-container w3-card" style="border-radius:10px !important;">
+        <h5 class="w3-opacity"><b>Computer Science Instructor, Ateneo de Davao University</b></h5>
+        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>November 1987 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
+        <p>Conducts actual classroom instruction designed to achieve course objectives that are aligned with the school's mission and vision.</p>
+        <p>Collaborates with industry, makes project proposals for software development, develops and implements software solutions for various aspects of their operation.</p>
+        <p>Mentors students, fostering a collaborative learning environment that promotes innovation and knowledge sharing on various projects with industry partners.</p>
+      </div>
+      <br>  
+      <div class="w3-container w3-card" style="border-radius:10px !important;">
+        <h5 class="w3-opacity"><b>Author of Various Youtube Instructional Videos on Computer Programming and Other Subject Areas</b></h5>
+        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2021 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
+        <p>Instructional Videos on History of Computing, Boolean Logic and Circuitverse, Assembly Language Programming, Database Desktop Development using C#, Introduction to Javascript, HTML and CSS.  
+          <b>Youtube channel:</b> <a href="https://www.youtube.com/@roytek7667/playlists">www.youtube.com/@roytek7667/playlists</a></p>
+      </div>
+      <br>  
+      <!-- ✅ Education -->
+      <div class="w3-container w3-card" style="border-radius:10px !important;">
+        <p class="w3-large w3-text-theme"><b><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-text-teal"></i>Education</b></p>
+        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>1996, Masters in Computer Science</h6>
+        <p>Ateneo de Manila University</p>
+        <p>Quezon City, Philippines</p>
+        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>1987, BS in Management Engineering</h6>
+        <p>Ateneo de Davao University</p>
+        <p>Davao City, Philippines</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Footer -->
+  <footer>
+     <div> @2025, Davao City, Philippines </div>
+  </footer>
+
+</body>
+</html>

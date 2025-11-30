@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Certificates | John Roy Geralde</title>
+  <link rel="icon" type="image/x-icon" href="portfolio.png">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+
+  <style>
+    html, body {
+      font-family: "Roboto", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+      overflow-x: hidden;
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: #003366 !important;
+      color: white;
+    }
+
+    .navbar a:hover {
+      background-color: white !important;
+      color: #003366 !important;
+    }
+
+    /* Main container */
+    .main-container {
+      flex: 1;
+      width: 100%;
+      margin-top: 60px;
+      background-color: white;
+      min-height: 100vh;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+
+    /* Header */
+    .header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    h2 {
+      color: black;
+      font-size: 2em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0;
+    }
+
+    h2 i {
+      color: #003366;
+    }
+
+    .home-shortcut {
+      background-color: #003366;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.3s ease;
+      border: 1px solid #003366;
+    }
+
+    .home-shortcut:hover {
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+      transform: scale(1.05);
+    }
+
+    .home-shortcut i {
+      color: white;
+      transition: color 0.3s ease;
+    }
+
+    .home-shortcut:hover i {
+      color: black !important;
+    }
+
+    /* Two-column layout */
+    .certificates-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    @media screen and (max-width: 900px) {
+      .certificates-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Certificate Cards */
+    .w3-card {
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .w3-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .w3-card img {
+      border-radius: 0;
+      transition: transform 0.3s ease;
+      width: 100%;
+    }
+
+    .w3-card:hover img {
+      transform: scale(1.02);
+    }
+
+    /* ✅ Back to Top Button */
+    #backToTop {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 9999;
+      background-color: #003366;
+      color: white;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 12px 15px;
+      border-radius: 50%;
+      font-size: 18px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      transition: all 0.3s;
+    }
+
+    #backToTop:hover {
+      background-color: white;
+      color: black;
+      border: 2px solid black;
+      transform: scale(1.1);
+    }
+
+    /* Footer */
+    footer {
+      width: 100%;
+      padding: 20px 0;
+      background-color: #003366 !important;
+      color: white;
+      text-align: center;
+      margin-top: auto;
+    }
+
+    footer a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Navbar -->
+  <div class="w3-bar navbar">
+    <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Home</a>
+    <a href="portfolio.html" class="w3-bar-item w3-button"><i class="fa fa-briefcase"></i> My Job Portfolio</a>
+    <a href="certificates.html" class="w3-bar-item w3-button"><i class="fa fa-certificate"></i> My Certificates</a>
+  </div>
+
+  <!-- ✅ Main Content -->
+  <div class="main-container w3-animate-opacity">
+    <div class="header-row">
+      <h2><i class="fa fa-certificate"></i> My Certificates</h2>
+      <a href="index.html" class="home-shortcut"><i class="fa fa-home"></i> Home</a>
+    </div>
+    <hr>
+
+    <!-- ✅ Two-column container -->
+    <div class="certificates-container">
+
+      <!-- Left Column: EF Set -->
+      <div>
+        <div class="w3-container w3-card w3-white" style="margin-bottom: 30px;">
+          <a href="https://cert.efset.org/32zuaQ">View Actual Certificate on EF Set Website</a>
+  
+          <h2 class="w3-text-grey w3-padding-16">
+            <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge"></i>My English Certification from EF Set
+          </h2>
+          <div class="w3-container">
+            <img src="efset.jpg" alt="EF Set Certificate">
+          </div>
+        </div>
+
+        <div class="w3-container w3-card w3-white" style="margin-bottom: 30px;">
+          <a href="https://www.coursera.org/account/accomplishments/verify/XTXQCSYD9DKT">View Actual Certificate on Coursera Website</a>
+          <h2 class="w3-text-grey w3-padding-16">
+            <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge"></i>My Coursera GraphQL Basics Training
+          </h2>
+          <div class="w3-container">
+            <img src="CourseraGraphQL.JPG" alt="GraphQL Certificate #1">
+          </div>
+        </div>
+        <div class="w3-container w3-card w3-white" style="margin-bottom: 30px;">
+          <a href="https://www.coursera.org/account/accomplishments/verify/1IX1VHFOLQKI">View Actual Certificate on Coursera Website</a>
+          <h2 class="w3-text-grey w3-padding-16">
+            <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge"></i>My Coursera GraphQL Intermediate Training
+          </h2>
+          <div class="w3-container">
+            <img src="CourseraGraphQL2.JPG" alt="GraphQL Certificate #2">
+          </div>
+        </div>
+      </div>
+      <!-- Right Column: Coursera GraphQL -->
+      <div>
+        <!-- UDEMY FULL STACK  -->
+        <div class="w3-container w3-card w3-white" style="margin-bottom: 30px;">
+           <a href="https://www.udemy.com/certificate/UC-30fdd047-02d7-4572-9cce-e5f976af32ab"/>View Actual Certificate on UDEMY Website</a>
+           <h2 class="w3-text-grey w3-padding-16">
+              <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge"></i>My UDEMY Fullstack Training
+           </h2>
+           <div class="w3-container">
+             <img src="UDEMYFULLSTACKCOURSE.JPG" alt="UDEMY Fullstack Web Development Certificate">
+           </div>
+        </div>
+               
+        <!-- Basic ReactJS  -->
+        <div class="w3-container w3-card w3-white" style="margin-bottom: 30px;">
+           <a href="https://www.coursera.org/account/accomplishments/verify/J0J76S0EUWE7">View Actual Certificate on Coursera Website</a>
+           <h2 class="w3-text-grey w3-padding-16">
+              <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge"></i>My Coursera ReactJS Basics Training
+           </h2>
+           <div class="w3-container">
+             <img src="CourseraReactBasics.JPG" alt="ReactJS Certificate">
+           </div>
+        </div>
+
+        <!-- Introduction to NextJS  -->
+        <div class="w3-container w3-card w3-white" style="margin-bottom: 30px;">
+           <a href="https://www.coursera.org/account/accomplishments/verify/086C3YS43LXO">View Actual Certificate on Coursera Website</a>
+           <h2 class="w3-text-grey w3-padding-16">
+              <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge"></i>My Coursera Introduction to NextJS
+           </h2>
+           <div class="w3-container">
+             <img src="CourseraIntroductiontoNextJS.JPG" alt="Coursera Introduction to NextJS Certificate">
+           </div>
+        </div>        
+       
+        <div class="w3-container w3-card w3-white" style="margin-bottom: 30px;">
+          <a href="https://www.udemy.com/certificate/UC-9c70be1b-7445-408a-82eb-a8333b5fb2fb"/>View Actual Certificate on UDEMY Website</a>
+          <h2 class="w3-text-grey w3-padding-16">
+            <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge"></i>My UDEMY MS SQL Fail Over Cluster Certificate
+          </h2>
+          <div class="w3-container">
+            <img src="UDEMYMSSQLSERVERFOCLUSTER.JPG" alt="MS SQL SERVER FAIL OVER Cluster Certificate">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ✅ Back to Top Button -->
+  <button id="backToTop" title="Back to top"><i class="fa fa-arrow-up"></i>Top</button>
+
+  <!-- ✅ Footer -->
+  <footer>
+    <p>Find me on social media.</p>
+    <p>
+      <i class="fa fa-youtube w3-hover-opacity"></i>
+      <a href="https://www.youtube.com/@roytek7667/playlists"> YouTube</a> |
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <a href="https://www.linkedin.com/in/john-geralde-20141593/"> LinkedIn</a>
+    </p>
+  </footer>
+
+  <!-- ✅ Scroll-to-Top Script -->
+  <script>
+    const topBtn = document.getElementById("backToTop");
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        topBtn.style.display = "block";
+      } else {
+        topBtn.style.display = "none";
+      }
+    };
+    topBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
